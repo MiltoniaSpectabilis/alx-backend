@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Basic Flask app."""
+"""
+Basic Flask app with single route
+"""
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -7,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    """Render the index page."""
+    """Route to render the home page."""
     return render_template('0-index.html')
 
 
